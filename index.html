@@ -25,13 +25,13 @@
         </div>
     </nav>
 
-    <div class="page-header header-filter clear-filter grey-filter" data-parallax="true" style="background-image: url('assets/img.gif');">
+    <div class="page-header header-filter clear-filter grey-filter" data-parallax="true" style="background-image: url('assets/bkg.gif');">
         <div class="container">
             <div class="row">
                 <div class="col-md-8 ml-auto mr-auto">
                     <div class="brand">
                         <h1>DrawIt</h1>
-                        <h3>Have a computer draw something! Type in an object and see it draw</h3>
+                        <h3>Teaching a computer to doodle through GANs</h3>
                     </div>
                 </div>
             </div>
@@ -42,14 +42,16 @@
         <div class="container">
             <div id="typography" class="cd-section">
                 <br><br><br>
-                <div class="title">
-                  <center><h2>See it Draw</h2></center>
+                <div class="title-small-margin">
+                    <center><h2>Type in a Word Below</h2></center>
+                </div>
+
+                <div class="title-sub-title">
+                    <center><h5>Alarm Clock, Apple, Coffee Cup, Eyeglasses, Fish, Flower, Leaf, Mona Lisa, Pig, Smiley Face</h5></center>
                 </div>
 
                 <center>
-                  <p>Type in a word below</p>
-
-                  <script>
+                    <script>
                     function validateForm() {
                       var x = document.forms["myForm"]["myCountry"].value;
                       var items = ["alarm clock", "apple", "coffee cup", "eyeglasses", "fish", "flower", "leaf", "pig", "smiley face", "mona lisa"];
@@ -59,16 +61,18 @@
                         return false;
                       }
                     }
-                  </script>
+                    </script>
 
-                  <form name = "myForm" autocomplete="off" action="run_script.php" onsubmit="return validateForm()" method="get">
-                      <div class="autocomplete" style="width:300px;">
-                          <input id="myInput" type="text" name="myCountry" placeholder="ex. apple">
-                      </div>
-                      <input type="submit">
-                  </form>
+                    <form name="myForm" autocomplete="off" action="run_script.php" onsubmit="return validateForm()" method="get">
+                        <div class="autocomplete" style="width:300px;">
+                            <input id="myInput" type="text" name="myCountry" placeholder="ex. apple">
+                        </div>
+                        <input type="submit">
+                    </form>
                 </center>
             </div>
+
+            <br><br><br>
 
             <!-- Seperator -->
             <div class="progress progress-line-primary">
@@ -99,14 +103,14 @@
                 </div>
             </div>
         </div>
-    </div>
-    <footer class="footer" data-background-color="black">
-        <div class="container">
-            <div class="copyright float-right">
-                &copy; DrawIt 2019 - William Eustis, Hassan Farooq, Timothy Vitkin, AJ Wisniewski
+        <footer class="footer" data-background-color="black">
+            <div class="container">
+                <div class="copyright float-right">
+                    &copy; DrawIt 2019 - William Eustis, Hassan Farooq, Timothy Vitkin, AJ Wisniewski
+                </div>
             </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
 
     <!--   Core JS Files   -->
     <script src="./assets/js/core/jquery.min.js" type="text/javascript"></script>
