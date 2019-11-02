@@ -48,7 +48,19 @@
                 <center>
                   <p>Type in a word below</p>
 
-                  <form autocomplete="off" action="run_script.php" method="get">
+                  <script>
+                    function validateForm() {
+                      var x = document.forms["myForm"]["myCountry"].value;
+                      var countries = ["alarm clock", "apple", "coffee cup", "eyeglasses", "fish", "flower", "leaf", "pig", "smiley face", "mona lisa"];
+
+                      if (!countries.includes(x)) {
+                        alert("Please select a valid option");
+                        return false;
+                      }
+                    }
+                  </script>
+
+                  <form name = "myForm" autocomplete="off" action="run_script.php" onsubmit="return validateForm()" method="get">
                       <div class="autocomplete" style="width:300px;">
                           <input id="myInput" type="text" name="myCountry" placeholder="ex. apple">
                       </div>
