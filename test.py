@@ -1,3 +1,4 @@
 from PIL import Image
-Image.open('output.jpg')
+img = Image.open('output.jpg')
 img.show()
+img.save('files/auwef.jpg')
