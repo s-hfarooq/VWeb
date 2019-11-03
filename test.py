@@ -1,3 +1,3 @@
-import sys
-
-print("TEST " + str(sys.argv[1]))
+from PIL import Image
+Image.open('output.jpg')
+img.show()
